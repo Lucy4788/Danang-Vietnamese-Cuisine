@@ -1,0 +1,263 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: #F7F7F7;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+*{
+    box-sizing: border-box;
+}
+/*---------------------------Navigation Bar------------------------------*/
+header #mobile{
+    display: none;
+}
+
+header #desktop{
+    display: inline-block;
+    position: fixed;
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    z-index: 9999;
+}
+header #desktop img{
+    width: 120px;
+    float: left;
+    margin-top: 14px;
+
+}
+
+header #desktop ul li{
+    list-style: none;
+    float: right;
+    margin: 20px 60px;
+}
+header #desktop ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 300ms ease-in-out;
+}
+header #desktop ul li button{
+    background-color: black;
+    color: white;
+    margin-top: -10px; 
+    padding: 5px 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    font-weight: lighter;
+}
+header #desktop ul li a:hover{
+    text-decoration: underline;
+    color: rgb(212, 24, 24);
+}
+/*----------------------------Nav Bar Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    html, body{
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+    header #desktop{
+        display: none;
+    }
+    header #mobile{
+        display: flex;
+        flex-flow: column-reverse wrap;
+        background-color: #F7F7F7;
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+    header #mobile img{
+        width: 100px;
+        padding-left: 5px;
+    }
+    
+    header #mobile ul li{
+        list-style: none;
+        margin: 5px;
+        float: right;
+    }
+    header #mobile ul li a{
+        color: black;
+        margin: 5px 10px;
+        transition: all 150ms ease;
+    }
+    header #mobile ul li a:hover{
+        color: rgb(212, 24, 24);
+    }
+}
+/*-----------------------------------------Banner------------------------------*/
+.banner{
+    background-image: url("../Images/banner-about.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    top: 70px;
+    position: relative;
+}
+.banner .bio{
+    background-color: rgb(247, 135, 122);
+    float: right;
+    width: 50%;
+    height: 500px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 50px;
+    color: black;
+    line-height: 2;
+}
+.banner .bio h2{
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 4px;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: lighter;
+}
+.banner .menu{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.banner .bio hr{
+    width: 105px;
+    margin-top: 0;
+    float: left;
+    border: 1px solid black;
+}
+.banner .menu a{
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+}
+.banner .menu a:hover{
+    color: white;
+}
+
+/*----------------------------Nav Bar Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    .banner .bio{
+        position: absolute;
+        float: none;
+        width: 100%;
+        height: 380px;
+        top: 70px;
+        background-color: rgba(247, 86, 86, 0.7);
+        padding-top: 10px;
+    }
+    .banner .bio h2{
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        line-height: 1.2;
+    }
+    .banner .bio p{
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    .banner .bio hr{
+        float: none;
+        text-align: center;
+    }
+    .banner .menu a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        transition: all 200ms ease-in;
+    }
+    .banner .menu a:hover{
+        color: black;
+    }
+}
+
+/*---------------------------------Footer----------------------------------*/
+footer{
+    position: relative;
+    top: 90px;
+    background-color: gray;
+    padding: 50px auto;
+}
+footer .disclaimer{
+    float: left;
+    font-weight: bold;
+}
+footer .media-container{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 15px;
+    justify-content: space-around;
+}
+footer .media-container i{
+    margin: 10px 20px;
+}
+/*----------------------------Footer Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    footer{
+        top: 70px;
+    }
+    footer .disclaimer{
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+    footer .disclaimer p{
+        font-size: 14px;
+    }
+    footer .media-container i{
+        margin: 10px 8px;
+    }
+}
+
+/*---------------------------------Web-dev-----------------------------------*/
+.web-dev{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.web-dev p{
+    font-size: 13px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.web-dev ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+  
+    padding-left: 0;
+    margin-top: 0;
+}
+.web-dev ul li{
+    list-style: none;
+}
+.web-dev ul li a{
+    color: black;
+    margin: 5px 20px;
+    transition: all 200ms ease-in;
+}
+.web-dev ul li a:hover{
+    color: rgb(238, 87, 87);
+}
+/*----------------------------Web-dev Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    .web-dev{
+        top: 70px;
+    }
+    .web-dev p{
+        font-size: 10px;
+    }
+}

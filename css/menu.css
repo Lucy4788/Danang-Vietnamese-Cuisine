@@ -1,0 +1,308 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: #F7F7F7;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+*{
+    box-sizing: border-box;
+}
+/*-------------------------Navigation Bar----------------------------*/
+header #mobile{
+    display: none;
+}
+
+header #desktop{
+    display: inline-block;
+    position: fixed;
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    z-index: 9999;
+}
+header #desktop img{
+    width: 120px;
+    float: left;
+    margin-top: 14px;
+
+}
+
+header #desktop ul li{
+    list-style: none;
+    float: right;
+    margin: 20px 60px;
+}
+header #desktop ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 300ms ease-in-out;
+}
+header #desktop ul li button{
+    background-color: black;
+    color: white;
+    margin-top: -10px; 
+    padding: 5px 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    font-weight: lighter;
+}
+header #desktop ul li a:hover{
+    text-decoration: underline;
+    color: rgb(212, 24, 24);
+}
+
+/*----------------------------Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    html, body{
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+    header #desktop{
+        display: none;
+    }
+    header #mobile{
+        display: flex;
+        flex-flow: column-reverse wrap;
+        background-color: #F7F7F7;
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+    header #mobile img{
+        width: 100px;
+        padding-left: 5px;
+    }
+    
+    header #mobile ul li{
+        list-style: none;
+        margin: 5px;
+        float: right;
+    }
+    header #mobile ul li a{
+        color: black;
+        margin: 5px 10px;
+    }
+    header #mobile ul li a{
+        color: black;
+        margin: 5px;
+        transition: all 300ms ease-in-out;
+    }
+    header #mobile ul li a:hover{
+        color: rgb(212, 24, 24);
+    }
+}
+
+/*-------------------------Menu Session----------------------------*/
+
+#menu-container {
+    background-color: white;
+    position: relative;
+    top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#menu-container img{
+    width: 400px;
+    height: 280px;
+}
+#menu-container .details{
+    font-size: 13px;
+    line-height: 0.3;
+}
+#menu-container h2{
+    text-align: center;
+    font-family: 'Pacifico', cursive;;
+    font-size: 55px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+.starter-dishes p,
+.Main-dishes p,
+.dessert-dish p{
+    text-align: center;
+    margin-top: 0;
+}
+.starter-dishes,
+.dessert-dish{
+    display: flex;
+    height: 700px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.Main-dishes{
+    display: flex;
+    height: 1090px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#menu-container button {
+    display: block;
+    margin: 15px auto;
+    background-color: rgb(255, 137, 124);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+#menu-container button a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 200ms ease;
+}
+
+#menu-container button a:hover{
+    color: white;
+}
+#menu-container button:hover{
+    box-shadow: 5px 5px 5px rgb(224, 203, 203) ;
+}
+
+/*----------------------------Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    #menu-container{
+        top: 50px;
+        
+    }
+    #menu-container h2{
+        font-size: 40px;
+    }
+    #menu-container img{
+        width: 150px;
+        height: 140px;
+    }
+    .starter-dishes,
+    .dessert-dish{
+        height: 600px;
+        width: 100%;
+    }
+    .starter-dishes p,
+    .Main-dishes p,
+    .dessert-dish p{
+        font-size: 11px;
+    }
+    #menu-container .details{
+        font-size: 10px;
+    }
+    .Main-dishes{
+        width: 100%;
+        height: 800px;
+    }
+    #menu-container button a{
+        transition: all 200ms ease;
+    }
+    #menu-container button a:hover{
+        color: white;
+    }
+    #menu-container button:hover{
+        box-shadow: 5px 5px 5px rgb(224, 203, 203) ;
+    }
+}
+
+/*-------------------------------Contact Session----------------------------*/
+.contact-session{
+    background-color: #f7f5dd;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+}
+.media-container i{
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+.hours h2{
+    margin-top: 19.920px;
+}
+.hours p{
+    line-height: 2;
+    font-weight: strong;
+}
+
+/*----------------------------Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    .contact-session{
+        top: 50px;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .hours h2{
+        margin-top: 0;
+    }
+    .hours,
+    .contact-info{
+        align-self: center;
+    }
+    .hours h2,
+    .hours p{
+        font-size: 13px;
+    }
+    .contact-info,
+    .contact-info h2{
+        font-size: 13px;
+    }
+    
+}
+/*------------------------------------Web-dev------------------------------------------*/
+.web-dev{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.web-dev p{
+    font-size: 13px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.web-dev ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+  
+    padding-left: 0;
+    margin-top: 0;
+}
+.web-dev ul li{
+    list-style: none;
+}
+.web-dev ul li a{
+    color: black;
+    margin: 5px 20px;
+    transition: all 200ms ease-in;
+}
+.web-dev ul li a:hover{
+    color: rgb(238, 87, 87);
+}
+/*----------------------------Iphone Vertical---------------------*/
+@media only screen and (max-width: 480px){
+    .web-dev{
+        top: 50px;
+    }
+    .web-dev p{
+        font-size: 11px;
+    }
+}
+
