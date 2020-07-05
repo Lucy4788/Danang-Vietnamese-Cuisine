@@ -2,7 +2,7 @@
   <h2><strong>Project goals</strong></h2>
   <p>Building a website for my dream Asian restaurant, with some key learning points as follows:</p>
   <ol>
-    <li> Using <strong><em>flexbox</em></strong> to design and build the layout for several features on the website (i.e. menu, footer and contact sections)</li>
+    <li> Using <strong><em>flexbox</em></strong> to design and build the layout for several features on the website (i.e. nav-bar, menu, footer & contact sections)</li>
     <li> Improving HTML semantics practice</li>
     <li> Practicing the theory of employing relative links </li>
     <li> Learning to organise coding folders to build a website </li>
